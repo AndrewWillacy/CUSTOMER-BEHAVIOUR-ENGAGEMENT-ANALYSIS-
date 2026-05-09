@@ -1,3 +1,377 @@
+# Customer Behaviour & Marketing Performance Analysis
+
+**Retail Customer Analytics Project | 2025**
+
+> *How can customer demographic and purchasing behaviour data be used to improve marketing effectiveness, optimise product focus, and support commercial decision-making across a global retail business?*
+
+---
+
+## Executive Summary
+
+This project analyses customer demographics, purchasing behaviour, product category performance, and marketing campaign effectiveness for a multinational retail business operating across eight countries.
+
+Using a combination of Excel, SQL, and Tableau, the project investigates how demographic characteristics influence purchasing behaviour, identifies the highest-performing marketing channels, and evaluates product sales performance across geographic regions.
+
+The analysis combines structured data cleaning, exploratory analysis, SQL querying, and dashboard development to transform raw transactional and customer data into actionable business insights.
+
+Key findings revealed that:
+
+* Alcohol and meat products generated the majority of total revenue
+* Twitter and Instagram significantly outperformed brochure-based advertising
+* Germany produced the highest average customer spend despite Spain generating the highest total revenue
+* Customer demographics showed identifiable differences in engagement and purchasing behaviour
+
+The final deliverable included a stakeholder-focused Tableau dashboard designed to support operational and marketing decision-making.
+
+---
+
+## Business Problem
+
+A multinational retail business wanted to better understand its customers, purchasing behaviour, and marketing effectiveness in order to support data-driven commercial decision-making.
+
+The primary objectives of the analysis were to:
+
+* Identify core customer demographics
+* Understand purchasing behaviour across customer groups
+* Evaluate which marketing channels generated the strongest engagement
+* Determine which product categories generated the highest revenue
+* Explore geographic differences in customer behaviour and sales performance
+* Provide actionable recommendations to improve marketing efficiency and commercial performance
+
+The project was designed to support stakeholders responsible for:
+
+* Marketing strategy
+* Product performance
+* Customer engagement
+* Commercial planning
+* Operational decision-making
+
+---
+
+## Data Sources
+
+| Source                           | Data Collected                                                                                 | Purpose                                      |
+| -------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| **Customer Marketing Dataset**   | Customer demographics, purchasing activity, income, household composition, transaction history | Customer behaviour and segmentation analysis |
+| **Advertising Campaign Dataset** | Campaign engagement and advertising channel performance                                        | Marketing effectiveness analysis             |
+
+The combined datasets included:
+
+* Customer demographic information
+* Product category spending
+* Income and household data
+* Campaign interaction metrics
+* Geographic sales information
+* Customer engagement behaviour
+
+---
+
+## Tools & Skills Used
+
+| Category                        | Tools / Methods                                                        |
+| ------------------------------- | ---------------------------------------------------------------------- |
+| **Data Cleaning & Preparation** | Excel                                                                  |
+| **Database Querying**           | PostgreSQL                                                             |
+| **Data Visualisation**          | Tableau                                                                |
+| **Analysis Techniques**         | Exploratory Data Analysis (EDA), segmentation analysis, trend analysis |
+| **Reporting**                   | Dashboard development, stakeholder reporting                           |
+
+**Skills demonstrated:**
+
+Data cleaning and validation · Exploratory analysis · SQL querying · Dashboard development · Business insight generation · Stakeholder-focused reporting · Data visualisation · Commercial analysis
+
+---
+
+## Analytical Approach
+
+The project followed a structured multi-stage workflow combining data cleaning, exploratory analysis, SQL analysis, and dashboard development.
+
+### 1. Data Cleaning & Validation
+
+The raw CSV datasets were initially imported into Excel for cleaning and preparation.
+
+Key cleaning and validation steps included:
+
+* Standardised date formatting
+* Removal of duplicate records
+* Validation of primary key uniqueness
+* Standardisation of text formatting and category labels
+* Identification and removal of implausible age records
+* Handling of inconsistent marital status categories
+* Removal of formatting inconsistencies in income data
+* Validation of missing values and data types
+* Creation of derived analytical fields including:
+
+  * Customer age
+  * Total customer spend
+
+Several data quality issues were identified during preparation:
+
+| Issue Identified                                        | Resolution                             |
+| ------------------------------------------------------- | -------------------------------------- |
+| Implausible customer ages (>124 years old)              | Removed from analysis                  |
+| Duplicate customer records                              | Removed after validation               |
+| Inconsistent category labels (e.g. “Single” vs “Alone”) | Standardised                           |
+| Extreme income outlier ($666,666)                       | Excluded from income-specific analysis |
+| Formatting inconsistencies in income fields             | Cleaned and standardised               |
+
+The cleaning process improved dataset consistency and ensured analytical outputs were reliable and suitable for business reporting.
+
+---
+
+### 2. Exploratory Data Analysis
+
+Exploratory analysis was conducted in Excel to identify demographic, behavioural, and commercial patterns.
+
+The analysis investigated:
+
+* Customer age distribution
+* Geographic customer distribution
+* Average spend by country
+* Income distribution
+* Product category sales
+* Marketing campaign effectiveness
+* Relationships between income and purchasing behaviour
+
+Key exploratory findings included:
+
+* Customer ages ranged from 28 to 84, with an average age of 55
+* Married and partnered customers represented the largest customer segment
+* Spain generated the highest total revenue due to the size of its customer base
+* Germany generated the highest average spend per customer
+* Most customers fell within a moderate income range between approximately $20K and $100K
+
+Visualisations created during exploratory analysis included:
+
+* Scatter plots
+* Bar charts
+* Geographic mapping
+* Income distribution analysis
+* Product category comparisons
+
+---
+
+### 3. SQL Analysis
+
+Following cleaning and exploratory analysis, the datasets were imported into PostgreSQL for deeper analytical querying.
+
+The SQL analysis focused on:
+
+* Product category performance
+* Campaign effectiveness
+* Geographic sales analysis
+* Customer segmentation
+* Revenue comparisons
+* Behavioural trends across demographic groups
+
+The database structure included:
+
+* Customer marketing data tables
+* Advertising campaign data tables
+* Derived calculated fields for analytical reporting
+
+Key SQL findings included:
+
+#### Product Performance
+
+* Alcohol products accounted for approximately 50% of total product sales
+* Meat products represented the second-highest revenue category
+* Vegetables and chocolate generated the lowest sales performance
+* Product preference patterns remained relatively consistent across customer demographics
+
+#### Campaign Effectiveness
+
+* Twitter was identified as the highest-performing advertising channel
+* Instagram and Facebook also demonstrated strong engagement performance
+* Brochure advertising consistently underperformed across most demographic groups
+* Bulk email campaigns showed stronger performance amongst single customers than expected
+
+#### Geographic Performance
+
+* Spain generated significantly higher total revenue than other regions
+* Germany produced the highest average customer spend
+* Montenegro significantly underperformed relative to all other markets
+
+---
+
+### 4. Dashboard Design & Development
+
+A stakeholder-focused Tableau dashboard was developed to communicate insights clearly and support business decision-making.
+
+The dashboard design prioritised:
+
+* Simplicity and readability
+* Clear visual hierarchy
+* Accessibility
+* Geographic comparison
+* Executive-level usability
+* Interactive filtering and exploration
+
+Dashboard features included:
+
+| Dashboard Component                     | Purpose                            |
+| --------------------------------------- | ---------------------------------- |
+| Customer demographic analysis           | Identify core customer groups      |
+| Geographic sales mapping                | Compare country-level performance  |
+| Product category visualisations         | Highlight key revenue drivers      |
+| Marketing campaign performance analysis | Evaluate advertising effectiveness |
+| Income and spending comparisons         | Explore customer value patterns    |
+
+The dashboard was designed using a consistent colour scheme and structured layout to support non-technical stakeholders in interpreting insights quickly and effectively.
+
+---
+
+## Key Findings & Business Recommendations
+
+### Finding 1: Product Sales Were Highly Concentrated
+
+Alcohol products represented approximately half of all product sales, with meat products generating the second-highest revenue contribution.
+
+| Product Category Insight                        | Business Impact                    |
+| ----------------------------------------------- | ---------------------------------- |
+| Alcohol dominated sales performance             | Core commercial revenue driver     |
+| Meat products showed consistently strong demand | High-value supporting category     |
+| Vegetables and chocolate underperformed         | Potential optimisation opportunity |
+
+#### Recommendation
+
+Prioritise inventory, promotions, and marketing activity around high-performing product categories while reviewing the commercial viability of underperforming categories.
+
+---
+
+### Finding 2: Social Media Significantly Outperformed Traditional Advertising
+
+Twitter, Instagram, and Facebook consistently generated stronger campaign engagement than brochure-based advertising.
+
+| Advertising Channel  | Relative Performance           |
+| -------------------- | ------------------------------ |
+| Twitter              | Highest-performing             |
+| Instagram            | Strong                         |
+| Facebook             | Strong                         |
+| Bulk Email           | Effective for single customers |
+| Brochure Advertising | Weakest-performing             |
+
+#### Recommendation
+
+Increase focus on digital and social media marketing while reducing reliance on lower-performing brochure campaigns.
+
+---
+
+### Finding 3: Geographic Performance Varied Significantly
+
+Although Spain generated the highest total revenue, Germany produced the highest average spend per customer.
+
+| Country Insight                         | Commercial Interpretation |
+| --------------------------------------- | ------------------------- |
+| Spain generated highest total revenue   | Largest customer base     |
+| Germany generated highest average spend | Higher customer value     |
+| Montenegro significantly underperformed | Low commercial return     |
+
+#### Recommendation
+
+Develop market-specific strategies focused on:
+
+* Customer growth in high-volume regions
+* Customer value optimisation in high-spend regions
+* Commercial review of underperforming markets
+
+---
+
+### Finding 4: Demographic Patterns Influenced Engagement Behaviour
+
+Customer demographics demonstrated measurable differences in purchasing and campaign engagement behaviour.
+
+Key observations included:
+
+* Married and partnered customers formed the largest customer group
+* Most customers were educated to graduate level or above
+* Bulk email campaigns performed particularly well amongst single customers
+
+#### Recommendation
+
+Use demographic segmentation to support more targeted and personalised marketing strategies.
+
+---
+
+## Limitations
+
+Several limitations were identified during the analysis:
+
+* Income data appeared inconsistently recorded in some cases
+* Some demographic categories required manual standardisation
+* The dataset represented historical behaviour only and could not fully predict future trends
+* Several low-volume geographic markets limited comparative analysis reliability
+* Customer lifetime value and retention metrics were unavailable
+
+Despite these limitations, the dataset was sufficiently robust to identify clear behavioural and commercial trends.
+
+---
+
+## Future Steps
+
+Potential future enhancements include:
+
+* Customer segmentation modelling using clustering techniques
+* Predictive modelling for campaign response behaviour
+* Customer lifetime value (CLV) analysis
+* Automated ETL pipeline development
+* Forecasting product demand by region
+* Development of real-time dashboards in Power BI or Tableau
+* Integration of transactional and loyalty programme data
+* A/B testing framework for campaign optimisation
+
+---
+
+## Dashboard & Deliverables
+
+The project deliverables included:
+
+| Deliverable       | Description                                         |
+| ----------------- | --------------------------------------------------- |
+| Tableau Dashboard | Interactive stakeholder reporting dashboard         |
+| SQL Scripts       | PostgreSQL database creation and analytical queries |
+| Technical Report  | Structured business analysis and recommendations    |
+| Presentation      | Stakeholder-focused presentation of findings        |
+
+---
+
+## About
+
+This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**.
+
+The analysis focused on transforming raw customer and marketing data into actionable business insights through structured cleaning, exploratory analysis, SQL querying, and dashboard development.
+
+**Andrew Willacy**
+[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | [andrew.willacy.data@gmail.com](mailto:andrew.willacy.data@gmail.com)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # CUSTOMER BEHAVIOUR & ENGAGEMENT ANALYSIS
 May 2025
 
