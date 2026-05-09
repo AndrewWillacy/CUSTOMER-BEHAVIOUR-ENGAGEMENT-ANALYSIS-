@@ -55,15 +55,7 @@ The project was designed to support stakeholders responsible for:
 | **Customer Marketing Dataset**   | marketing_data.csv | Customer demographics, purchasing activity by product category, income, household composition (No. of children etc), transaction history, campaign response | Customer behaviour and segmentation analysis |
 | **Advertising Campaign Dataset** | ad_data.csv |  Advertising channel exposure per customer (Bulkmail, Twitter, Instagram, Facebook, Brochure), Campaign engagement and advertising channel performance | Marketing effectiveness analysis             |
 
-| File | Contents |
-|------|----------|
-| `marketing_data.csv` | Customer demographics, purchase history by product category, recency, campaign response |
-| `ad_data.csv` | Advertising channel exposure per customer (Bulkmail, Twitter, Instagram, Facebook, Brochure) |
-
 Two datasets were joined on customer ID using SQL to enable cross-analysis of demographics, purchasing behaviour, and advertising exposure.
-
-
-
 
 The combined datasets included:
 
