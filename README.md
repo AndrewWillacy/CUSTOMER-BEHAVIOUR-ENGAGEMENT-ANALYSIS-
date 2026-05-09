@@ -80,7 +80,7 @@ The combined datasets included:
 
 **Skills demonstrated:**
 
-End-to-end data workflow · Data cleaning and validation · Exploratory analysis (EDA) · SQL database building & querying · Outlier detection and handling · Dashboard development · Business insight generation · Stakeholder-focused reporting · Data visualisation · Commercial analysis
+End-to-end data workflow · Data cleaning and validation · Exploratory analysis (EDA) · SQL database building & querying · Outlier detection and handling ·  Dashboard development · Business insight generation · Stakeholder-focused reporting · Data visualisation · Commercial analysis
 
 
 ---
