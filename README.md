@@ -82,6 +82,20 @@ The combined datasets included:
 
 Data cleaning and validation · Exploratory analysis · SQL querying · Dashboard development · Business insight generation · Stakeholder-focused reporting · Data visualisation · Commercial analysis
 
+
+## Tools & Skills Used
+
+| Category | Tools |
+|----------|-------|
+| **Data Cleaning & EDA** | Excel (advanced functions, pivot tables, calculated columns) |
+| **Database & Querying** | PostgreSQL (table creation, INNER JOIN, CASE, GREATEST/LEAST, aggregate functions) |
+| **Visualisation & Dashboard** | Tableau (interactive dashboard, filters, multiple chart types) |
+| **Framework** | IDEAL Problem-Solving Framework (Bransford & Stein, 1984) |
+
+**Skills demonstrated:** End-to-end data workflow · Data cleaning and validation · SQL database design · Multi-table querying · Outlier detection and handling · Dashboard design · Stakeholder-focused insight communication
+
+
+
 ---
 
 ## Analytical Approach
