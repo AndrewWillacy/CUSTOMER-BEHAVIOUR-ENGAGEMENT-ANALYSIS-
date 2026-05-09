@@ -50,10 +50,20 @@ The project was designed to support stakeholders responsible for:
 
 ## Data Sources
 
-| Source                           | Data Collected                                                                                 | Purpose                                      |
-| -------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| Source                           | File | Data Collected                                                                                 | Purpose                                      |
+| -------------------------------- | ---- | ---------------------------------------------------------------------------------------------- | -------------------------------------------- |
 | **Customer Marketing Dataset**   | Customer demographics, purchasing activity, income, household composition, transaction history | Customer behaviour and segmentation analysis |
 | **Advertising Campaign Dataset** | Campaign engagement and advertising channel performance                                        | Marketing effectiveness analysis             |
+
+| File | Contents |
+|------|----------|
+| `marketing_data.csv` | Customer demographics, purchase history by product category, recency, campaign response |
+| `ad_data.csv` | Advertising channel exposure per customer (Bulkmail, Twitter, Instagram, Facebook, Brochure) |
+
+Two datasets were joined on customer ID using SQL to enable cross-analysis of demographics, purchasing behaviour, and advertising exposure.
+
+
+
 
 The combined datasets included:
 
