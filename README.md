@@ -346,6 +346,207 @@ The analysis focused on transforming raw customer and marketing data into action
 
 
 
+---
+
+
+# Customer Demographics & Marketing Channel Effectiveness Analysis
+**LSE Data Analytics Career Accelerator — DA201 | June 2025**
+
+> *Which customers does this retailer serve, which advertising channels drive the most value, and do demographics influence what people buy?*
+
+---
+
+## Executive Summary
+
+This project analyses customer purchasing behaviour and advertising effectiveness for a global supermarket operating across eight countries. Using Excel, SQL, and Tableau, the analysis identifies clear demographic patterns in the customer base, pinpoints which advertising channels drive the highest average spend, and determines whether product preferences vary by demographic group.
+
+**Key results:** Alcohol accounts for 50% of all product sales regardless of country, marital status, or household composition. Instagram and Facebook drive the highest average customer spend among those exposed to advertising. Brochure advertising is consistently the least effective channel across all segments. Spain dominates revenue by volume but Germany and South Africa produce higher average spend per customer.
+
+---
+
+## Business Problem
+
+A global supermarket operating in eight countries wanted to better understand its customer base to inform marketing strategy and resource allocation. Three core business questions drove the analysis:
+
+> **1. What are the demographics of our customers?**
+> **2. Which advertising channels are most effective?**
+> **3. Which products sell best, and does that vary by customer demographic?**
+
+The answers were intended to support executive decision-making on advertising spend, market prioritisation, and product focus.
+
+---
+
+## Data Sources
+
+| File | Contents |
+|------|----------|
+| `marketing_data.csv` | Customer demographics, purchase history by product category, recency, campaign response |
+| `ad_data.csv` | Advertising channel exposure per customer (Bulkmail, Twitter, Instagram, Facebook, Brochure) |
+
+Two datasets were joined on customer ID using SQL to enable cross-analysis of demographics, purchasing behaviour, and advertising exposure.
+
+---
+
+## Tools & Skills Used
+
+| Category | Tools |
+|----------|-------|
+| **Data Cleaning & EDA** | Excel (advanced functions, pivot tables, calculated columns) |
+| **Database & Querying** | PostgreSQL (table creation, INNER JOIN, CASE, GREATEST/LEAST, aggregate functions) |
+| **Visualisation & Dashboard** | Tableau (interactive dashboard, filters, multiple chart types) |
+| **Framework** | IDEAL Problem-Solving Framework (Bransford & Stein, 1984) |
+
+**Skills demonstrated:** End-to-end data workflow · Data cleaning and validation · SQL database design · Multi-table querying · Outlier detection and handling · Dashboard design · Stakeholder-focused insight communication
+
+---
+
+## Analytical Approach
+
+### 1. Data Cleaning (Excel)
+
+The raw dataset required significant preparation before analysis could begin:
+
+- **Date formatting** standardised to DD/MM/YYYY
+- **Duplicate detection** — primary key (ID) checked for uniqueness; rows with identical entities across all fields except PK removed as implausible duplicates
+- **Outlier removal** — three records showing customer ages over 124 removed as implausible; one income outlier of $666,666 (far above the next highest value) excluded from income-based analysis
+- **Standardisation** — marital status categories consolidated: 'Single' and 'Alone' merged; 'YOLO' and 'Absurd' removed (three records, negligible impact)
+- **Calculated columns added** — `Age` (derived from Year_Birth) and `Total_Spend` (sum of all product categories per customer)
+- **Column renaming** — product category codes translated to meaningful labels (e.g. 'AmtLiq' → 'Alcohol')
+- **Data type validation** — Excel TYPE function used to ensure consistent data types throughout
+
+**Key observation:** The youngest customer in the cleaned dataset would have been 15 at the time of registration — flagged as a data quality concern worth investigating further.
+
+### 2. SQL Analysis (PostgreSQL)
+
+A PostgreSQL database was created with two tables — `Marketing_Data` and `ad_data` — with customer ID as the primary key and join field.
+
+Queries addressed each of the three business questions:
+
+**Revenue and product analysis:**
+- Total spend aggregated by country using `SUM` and `GROUP BY`
+- Most and least popular product categories identified per country and marital status using `GREATEST` and `LEAST` functions within `CASE` statements
+- Product preferences cross-referenced by household composition (kids/teens at home vs not)
+
+**Advertising effectiveness:**
+- Boolean ad exposure fields cast to integer to enable summation
+- Most and least effective channels identified per country and marital status
+- A `Media` column was engineered in `ad_data` to enable average spend analysis by channel — customers joined to their advertising exposure and average spend calculated per channel using `ROUND(AVG())` and `ORDER BY Avg_Spend DESC`
+
+**Key SQL technique:** Boolean-to-integer casting (`::INT`) to aggregate advertising exposure data, and `GREATEST`/`LEAST` functions to identify highest and lowest values across multiple product or channel columns within a single query.
+
+### 3. Dashboard Design (Tableau)
+
+The Tableau dashboard was designed with a non-technical executive audience in mind, using a calm blue colour scheme chosen for readability and professionalism. Prototype layouts were planned on paper before build.
+
+**Dashboard components:**
+- Age range distribution of customers
+- Marital status breakdown
+- Education level distribution
+- World map showing geographical customer distribution and density
+- Income distribution by customer count
+- Total sales by product category
+- Advertising campaign effectiveness by channel and country
+
+Design decisions prioritised clarity over complexity — filters allow stakeholder exploration without requiring analytical knowledge. Chart types were chosen to match the nature of each variable (bar charts for categories, scatter plots for continuous relationships, maps for geographic data).
+
+---
+
+## Key Findings
+
+### Customer Demographics
+The customer base spans 8 countries with ages ranging from 28 to 84 (average 55). The majority are married or in relationships, and most are educated to graduate level or above. Spain has by far the largest customer base (994 customers) and highest total revenue ($652,074), but Germany produces the highest average spend per customer ($694.50), followed closely by the USA ($689.07).
+
+### Product Sales
+
+| Product | Performance |
+|---------|-------------|
+| Alcohol | 50% of all sales — most popular in every country and across all marital statuses |
+| Meat | Second highest overall |
+| Vegetables | Consistently worst performing across all segments |
+
+Product preferences do **not** meaningfully vary by marital status, country, or whether children or teenagers are present in the household. Alcohol dominates universally.
+
+### Advertising Effectiveness
+
+| Channel | Avg Spend | Notes |
+|---------|-----------|-------|
+| Instagram | $1,609 | Highest average spend; highest income customers |
+| Facebook | $1,541 | Second highest |
+| Brochure | $1,370 | Third — but least effective by country/marital analysis |
+| Twitter | $848 | Lower average spend |
+| None (no ad exposure) | $532 | Baseline |
+
+Brochure advertising is the least effective channel across nearly every country and marital status segment — the only exception being Montenegro (two customers, statistically negligible).
+
+Bulk email performs surprisingly well among single customers, approaching Twitter effectiveness for that demographic.
+
+---
+
+## Business Recommendations
+
+- **Prioritise Instagram and Facebook** for advertising investment — both drive the highest average customer spend
+- **Discontinue or significantly reduce brochure advertising** — consistently least effective across all segments
+- **Target single customers with bulk email** — disproportionately effective for this demographic
+- **Focus on alcohol and meat** as core product categories; deprioritise vegetable promotions
+- **Investigate Germany** — smaller customer base but highest average spend per customer suggests high-value segment worth developing
+- **Review Montenegro** — two customers and negligible revenue; assess whether to maintain or exit this market
+
+---
+
+## Limitations
+
+- **Small advertising sample:** Only 292 customers were exposed to at least one advertising channel, limiting the statistical robustness of channel effectiveness conclusions
+- **Single ad exposure assumed:** The methodology assigns one channel per customer based on the last Boolean flag set — customers exposed to multiple channels are not fully accounted for
+- **Income data inconsistency:** Income values appear to be a mix of annual and monthly figures; no normalisation was possible without additional context
+- **15-year-old customer:** The youngest customer would have been 15 at registration — raises data collection questions that could not be resolved with available information
+- **Spending score unknown:** No metadata explaining how `Count_success` was calculated — limits interpretation of campaign success metrics
+- **Cross-sectional snapshot:** No time dimension in the data; trends over time cannot be assessed
+
+---
+
+## Further Analysis
+
+- **Longitudinal analysis** — track how customer demographics and purchasing behaviour shift over time
+- **Multi-channel exposure** — properly account for customers exposed to more than one advertising channel to understand combined channel effects
+- **Country-level deep dive** — explore why Germany produces higher average spend despite a smaller customer base
+- **Age-segmented advertising analysis** — test whether younger and older customer segments respond differently to specific channels
+- **Income normalisation** — clarify whether income figures are annual or monthly and normalise accordingly before including income in regression or clustering analysis
+
+---
+
+## Repository Structure
+
+```
+├── data/
+│   ├── marketing_data_clean.csv       # Cleaned marketing dataset
+│   └── ad_data_clean.csv              # Cleaned advertising dataset
+├── sql/
+│   └── 2market_queries.sql            # All SQL queries with inline comments
+├── tableau/
+│   └── dashboard.twbx                 # Tableau packaged workbook
+├── report/
+│   └── Willacy_Andrew_DA201_Report.pdf
+└── README.md
+```
+
+---
+
+## Results Summary
+
+| Question | Answer |
+|----------|--------|
+| Who are the customers? | Primarily aged 28–84 (avg 55), married/together, graduate-educated, concentrated in Spain |
+| Which ad channel is most effective? | Instagram (highest avg spend $1,609); Brochure consistently least effective |
+| Which products sell best? | Alcohol (50% of all sales) universally; no meaningful demographic variation |
+
+---
+
+## About
+
+This project was completed as part of the **LSE Data Analytics Career Accelerator (DA201: Exploratory Analysis and Presenting Insights), June 2025**, achieving a score of 80%.
+
+**Andrew Willacy**
+[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | andrew.willacy.data@gmail.com
 
 
 
@@ -353,7 +554,7 @@ The analysis focused on transforming raw customer and marketing data into action
 
 
 
-
+---
 
 
 
