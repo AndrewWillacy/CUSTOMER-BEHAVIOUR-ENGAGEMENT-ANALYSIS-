@@ -70,17 +70,17 @@ The combined datasets included:
 
 ## Tools & Skills Used
 
-| Category                        | Tools / Methods                                                        |
-| ------------------------------- | ---------------------------------------------------------------------- |
-| **Data Cleaning & Preparation** | Excel                                                                  |
-| **Database Querying**           | PostgreSQL                                                             |
-| **Data Visualisation**          | Tableau                                                                |
-| **Analysis Techniques**         | Exploratory Data Analysis (EDA), segmentation analysis, trend analysis |
-| **Reporting**                   | Dashboard development, stakeholder reporting                           |
+| Category                        | Tools / Methods                                                                    |
+| ------------------------------- | ---------------------------------------------------------------------------------- |
+| **Data Cleaning & EDA**         | Excel (advanced functions, pivot tables, calculated columns)                       |
+| **Database & Querying**         | PostgreSQL (table creation, INNER JOIN, CASE, GREATEST/LEAST, aggregate functions) |
+| **Data Visualisation**          | Tableau Tableau (interactive dashboard, filters, multiple chart types              |
+| **Analysis Techniques**         | Exploratory Data Analysis (EDA), segmentation analysis, trend analysis             |
+| **Reporting**                   | Dashboard development, stakeholder reporting                                       |
 
 **Skills demonstrated:**
 
-Data cleaning and validation · Exploratory analysis · SQL querying · Dashboard development · Business insight generation · Stakeholder-focused reporting · Data visualisation · Commercial analysis
+End-to-end data workflow · Data cleaning and validation · Exploratory analysis (EDA) · SQL database building & querying · Outlier detection and handling ·Dashboard development · Business insight generation · Stakeholder-focused reporting · Data visualisation · Commercial analysis
 
 
 ## Tools & Skills Used
