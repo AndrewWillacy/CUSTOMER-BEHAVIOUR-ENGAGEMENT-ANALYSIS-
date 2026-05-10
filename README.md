@@ -101,7 +101,7 @@ Key cleaning and validation steps included:
 * Standardisation of text formatting and category labels: product category codes translated to meaningful labels (e.g. 'AmtLiq' → 'Alcohol')
 * Identification and removal of implausible age records: three records showing customer ages over 124 removed as implausible; one income outlier of $666,666 (far above the next highest value) excluded from income-based analysis, but retained for other analyssis
 * Handling of inconsistent marital status categories: 'Single' and 'Alone' merged; 'YOLO' and 'Absurd' removed (three records, negligible impact)
-* Removal of formatting inconsistencies in income data: 
+* Removal of formatting inconsistencies in income data: Formated column to numeric, removing $ signs and setting to 2 decimal places
 * Validation of missing values and data types
 * Creation of derived analytical fields including:
 
