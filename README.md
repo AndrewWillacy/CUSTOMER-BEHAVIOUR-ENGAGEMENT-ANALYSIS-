@@ -95,7 +95,8 @@ The raw CSV datasets were initially imported into Excel for cleaning and prepara
 
 Key cleaning and validation steps included:
 
-* Standardised date formatting: standardised to DD/MM/YYYY
+* Standardised date formatting:
+standardised to DD/MM/YYYY
 * Removal of duplicate records: rows with identical entities across all fields except PK removed as implausible duplicates
 * Validation of primary key uniqueness: primary key (ID) checked for uniqueness
 * Standardisation of text formatting and category labels: product category codes translated to meaningful labels (e.g. 'AmtLiq' → 'Alcohol')
