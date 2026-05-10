@@ -87,7 +87,7 @@ End-to-end data workflow · Data cleaning and validation · Exploratory analysis
 
 ## Analytical Approach
 
-The project followed a structured multi-stage workflow combining data cleaning, exploratory analysis, SQL analysis, and dashboard development.
+The project followed a structured multi-stage workflow combining data cleaning, exploratory analysis, SQL analysis, and dashboard development.The raw dataset required significant preparation before analysis could begin:
 
 ### 1. Data Cleaning & Validation
 
@@ -95,13 +95,13 @@ The raw CSV datasets were initially imported into Excel for cleaning and prepara
 
 Key cleaning and validation steps included:
 
-* Standardised date formatting
-* Removal of duplicate records
-* Validation of primary key uniqueness
-* Standardisation of text formatting and category labels
-* Identification and removal of implausible age records
-* Handling of inconsistent marital status categories
-* Removal of formatting inconsistencies in income data
+* Standardised date formatting: standardised to DD/MM/YYYY
+* Removal of duplicate records: rows with identical entities across all fields except PK removed as implausible duplicates
+* Validation of primary key uniqueness: primary key (ID) checked for uniqueness
+* Standardisation of text formatting and category labels: product category codes translated to meaningful labels (e.g. 'AmtLiq' → 'Alcohol')
+* Identification and removal of implausible age records: three records showing customer ages over 124 removed as implausible; one income outlier of $666,666 (far above the next highest value) excluded from income-based analysis, but retained for other analyssis
+* Handling of inconsistent marital status categories: 'Single' and 'Alone' merged; 'YOLO' and 'Absurd' removed (three records, negligible impact)
+* Removal of formatting inconsistencies in income data: 
 * Validation of missing values and data types
 * Creation of derived analytical fields including:
 
