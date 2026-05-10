@@ -120,6 +120,19 @@ Several data quality issues were identified during preparation:
 
 The cleaning process improved dataset consistency and ensured analytical outputs were reliable and suitable for business reporting.
 
+### 1. Data Cleaning (Excel)
+
+The raw dataset required significant preparation before analysis could begin:
+
+- **Date formatting** standardised to DD/MM/YYYY
+- **Duplicate detection** — primary key (ID) checked for uniqueness; rows with identical entities across all fields except PK removed as implausible duplicates
+- **Outlier removal** — three records showing customer ages over 124 removed as implausible; one income outlier of $666,666 (far above the next highest value) excluded from income-based analysis
+- **Standardisation** — marital status categories consolidated: 'Single' and 'Alone' merged; 'YOLO' and 'Absurd' removed (three records, negligible impact)
+- **Calculated columns added** — `Age` (derived from Year_Birth) and `Total_Spend` (sum of all product categories per customer)
+- **Column renaming** — product category codes translated to meaningful labels (e.g. 'AmtLiq' → 'Alcohol')
+- **Data type validation** — Excel TYPE function used to ensure consistent data types throughout
+
+**Key observation:** The youngest customer in the cleaned dataset would have been 15 at the time of registration — flagged as a data quality concern worth investigating further.
 ---
 
 ### 2. Exploratory Data Analysis
