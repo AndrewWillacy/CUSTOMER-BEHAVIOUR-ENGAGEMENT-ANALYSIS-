@@ -223,6 +223,58 @@ Dashboard features included:
 The dashboard was designed using a consistent colour scheme and structured layout to support non-technical stakeholders in interpreting insights quickly and effectively.
 
 ---
+## Analytical Approach
+
+### 1. Data Cleaning (Excel)
+
+The raw dataset required significant preparation before analysis could begin:
+
+- **Date formatting** standardised to DD/MM/YYYY
+- **Duplicate detection** — primary key (ID) checked for uniqueness; rows with identical entities across all fields except PK removed as implausible duplicates
+- **Outlier removal** — three records showing customer ages over 124 removed as implausible; one income outlier of $666,666 (far above the next highest value) excluded from income-based analysis
+- **Standardisation** — marital status categories consolidated: 'Single' and 'Alone' merged; 'YOLO' and 'Absurd' removed (three records, negligible impact)
+- **Calculated columns added** — `Age` (derived from Year_Birth) and `Total_Spend` (sum of all product categories per customer)
+- **Column renaming** — product category codes translated to meaningful labels (e.g. 'AmtLiq' → 'Alcohol')
+- **Data type validation** — Excel TYPE function used to ensure consistent data types throughout
+
+**Key observation:** The youngest customer in the cleaned dataset would have been 15 at the time of registration — flagged as a data quality concern worth investigating further.
+
+### 2. SQL Analysis (PostgreSQL)
+
+A PostgreSQL database was created with two tables — `Marketing_Data` and `ad_data` — with customer ID as the primary key and join field.
+
+Queries addressed each of the three business questions:
+
+**Revenue and product analysis:**
+- Total spend aggregated by country using `SUM` and `GROUP BY`
+- Most and least popular product categories identified per country and marital status using `GREATEST` and `LEAST` functions within `CASE` statements
+- Product preferences cross-referenced by household composition (kids/teens at home vs not)
+
+**Advertising effectiveness:**
+- Boolean ad exposure fields cast to integer to enable summation
+- Most and least effective channels identified per country and marital status
+- A `Media` column was engineered in `ad_data` to enable average spend analysis by channel — customers joined to their advertising exposure and average spend calculated per channel using `ROUND(AVG())` and `ORDER BY Avg_Spend DESC`
+
+**Key SQL technique:** Boolean-to-integer casting (`::INT`) to aggregate advertising exposure data, and `GREATEST`/`LEAST` functions to identify highest and lowest values across multiple product or channel columns within a single query.
+
+### 3. Dashboard Design (Tableau)
+
+The Tableau dashboard was designed with a non-technical executive audience in mind, using a calm blue colour scheme chosen for readability and professionalism. Prototype layouts were planned on paper before build.
+
+**Dashboard components:**
+- Age range distribution of customers
+- Marital status breakdown
+- Education level distribution
+- World map showing geographical customer distribution and density
+- Income distribution by customer count
+- Total sales by product category
+- Advertising campaign effectiveness by channel and country
+
+Design decisions prioritised clarity over complexity — filters allow stakeholder exploration without requiring analytical knowledge. Chart types were chosen to match the nature of each variable (bar charts for categories, scatter plots for continuous relationships, maps for geographic data).
+
+---
+
+---
 
 ## Key Findings & Business Recommendations
 
