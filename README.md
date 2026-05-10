@@ -89,7 +89,7 @@ End-to-end data workflow · Data cleaning and validation · Exploratory analysis
 
 The project followed a structured multi-stage workflow combining data cleaning, exploratory analysis, SQL analysis, and dashboard development.The raw dataset required significant preparation before analysis could begin:
 
-### 1. Data Cleaning & Validation
+### 1. Data Cleaning & Validation (Excel)
 
 The raw CSV datasets were initially imported into Excel for cleaning and preparation.
 
@@ -120,18 +120,6 @@ Several data quality issues were identified during preparation:
 | Formatting inconsistencies in income fields             | Cleaned and standardised               |
 
 The cleaning process improved dataset consistency and ensured analytical outputs were reliable and suitable for business reporting.
-
-### 1. Data Cleaning (Excel)
-
-The raw dataset required significant preparation before analysis could begin:
-
-- **Date formatting** standardised to DD/MM/YYYY
-- **Duplicate detection** — primary key (ID) checked for uniqueness; rows with identical entities across all fields except PK removed as implausible duplicates
-- **Outlier removal** — three records showing customer ages over 124 removed as implausible; one income outlier of $666,666 (far above the next highest value) excluded from income-based analysis
-- **Standardisation** — marital status categories consolidated: 'Single' and 'Alone' merged; 'YOLO' and 'Absurd' removed (three records, negligible impact)
-- **Calculated columns added** — `Age` (derived from Year_Birth) and `Total_Spend` (sum of all product categories per customer)
-- **Column renaming** — product category codes translated to meaningful labels (e.g. 'AmtLiq' → 'Alcohol')
-- **Data type validation** — Excel TYPE function used to ensure consistent data types throughout
 
 **Key observation:** The youngest customer in the cleaned dataset would have been 15 at the time of registration — flagged as a data quality concern worth investigating further.
 ---
