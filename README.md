@@ -121,7 +121,7 @@ Several data quality issues were identified during preparation:
 
 The cleaning process improved dataset consistency and ensured analytical outputs were reliable and suitable for business reporting.
 
-**Key observation:** The youngest customer in the cleaned dataset would have been 15 at the time of registration — flagged as a data quality concern worth investigating further.
+**Key observation:** The youngest customer in the cleaned dataset would have been 15 at the time of registration - flagged as a data quality concern worth investigating further.
 ---
 
 ### 2. Exploratory Data Analysis
