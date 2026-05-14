@@ -157,7 +157,8 @@ Visualisations created during exploratory analysis included:
 
 ### 3. SQL Analysis (PostgreSQL)
 
-Following cleaning and exploratory analysis, the datasets were imported into PostgreSQL for deeper analytical querying.
+Following cleaning and exploratory analysis, a PostgreSQL database was created with two tables — `Marketing_Data` and `ad_data` — with customer ID as the primary key. 
+The tables were populated by importing the csv files of the same names, for deeper analytical querying. Initially this was done on the individual tables and later they were joined to form a third table.
 
 The SQL analysis focused on:
 
