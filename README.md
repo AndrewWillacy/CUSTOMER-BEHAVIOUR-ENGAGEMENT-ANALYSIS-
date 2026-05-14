@@ -174,7 +174,7 @@ The database structure included:
 * Customer marketing data tables
 * Advertising campaign data tables
 * Derived calculated fields for analytical reporting
-* 
+  
 **Revenue and product analysis:**
 - Total spend aggregated by country using `SUM` and `GROUP BY`
 - Most and least popular product categories identified per country and marital status using `GREATEST` and `LEAST` functions within `CASE` statements
