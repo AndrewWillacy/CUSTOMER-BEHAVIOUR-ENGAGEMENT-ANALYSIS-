@@ -174,6 +174,21 @@ The database structure included:
 * Customer marketing data tables
 * Advertising campaign data tables
 * Derived calculated fields for analytical reporting
+* 
+**Revenue and product analysis:**
+- Total spend aggregated by country using `SUM` and `GROUP BY`
+- Most and least popular product categories identified per country and marital status using `GREATEST` and `LEAST` functions within `CASE` statements
+- Product preferences cross-referenced by household composition (kids/teens at home vs not)
+
+**Advertising effectiveness:**
+- Boolean ad exposure fields cast to integer to enable summation
+- Most and least effective channels identified per country and marital status
+- A `Media` column was engineered in `ad_data` to enable average spend analysis by channel — customers joined to their advertising exposure and average spend calculated per channel using `ROUND(AVG())` and `ORDER BY Avg_Spend DESC`
+
+**Key SQL technique:** Boolean-to-integer casting (`::INT`) to aggregate advertising exposure data, and `GREATEST`/`LEAST` functions to identify highest and lowest values across multiple product or channel columns within a single query.
+
+
+
 
 Key SQL findings included:
 
@@ -197,9 +212,7 @@ Key SQL findings included:
 * Germany produced the highest average customer spend
 * Montenegro significantly underperformed relative to all other markets
 
-**Key SQL techniques used**
 
-End-to-end data workflow · Data cleaning and validation · Exploratory analysis (EDA) · SQL database building & querying · Outlier detection and handling ·  Dashboard development · Business ins
 
 ---
 ### 2. SQL Analysis (PostgreSQL)
