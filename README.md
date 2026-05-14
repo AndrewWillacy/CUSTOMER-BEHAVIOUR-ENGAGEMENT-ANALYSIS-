@@ -197,6 +197,7 @@ Key SQL findings included:
 * Germany produced the highest average customer spend
 * Montenegro significantly underperformed relative to all other markets
 
+**Key SQL technique:*
 ---
 ### 2. SQL Analysis (PostgreSQL)
 
