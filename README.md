@@ -197,7 +197,10 @@ Key SQL findings included:
 * Germany produced the highest average customer spend
 * Montenegro significantly underperformed relative to all other markets
 
-**Key SQL techniques used:**
+**Key SQL techniques used**
+
+End-to-end data workflow · Data cleaning and validation · Exploratory analysis (EDA) · SQL database building & querying · Outlier detection and handling ·  Dashboard development · Business ins
+
 ---
 ### 2. SQL Analysis (PostgreSQL)
 
