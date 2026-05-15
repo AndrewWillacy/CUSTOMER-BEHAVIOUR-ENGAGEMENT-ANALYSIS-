@@ -176,7 +176,7 @@ Visualisations created during exploratory analysis included:
 
 Figure 3: The number of customers by country
 
-<img width="750" height="450" alt="Screenshot 2025-12-13 134910" src="https://github.com/user-attachments/assets/e5d1c800-453f-48d9-80ae-5ae6a2a84731" />  
+<img width="750" height="450" alt="Screenshot 2025-12-13 134910" src="https://github.com/user-attachments/assets/e5d1c800-453f-48d9-80ae-5ae6a2a84731" />/
 
 Figure 4: Incoome by total spend
 
