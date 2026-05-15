@@ -235,7 +235,7 @@ Dashboard features included:
 | Marketing campaign performance analysis | Evaluate advertising effectiveness |
 | Income and spending comparisons         | Explore customer value patterns    |
 
-Design decisions prioritised clarity over complexity — filters allow stakeholder exploration without requiring analytical knowledge. Chart types were chosen to match the nature of each variable (bar charts for categories, scatter plots for continuous relationships, maps for geographic data).
+Design decisions prioritised clarity over complexity - filters allow stakeholder exploration without requiring analytical knowledge. Chart types were chosen to match the nature of each variable (bar charts for categories, scatter plots for continuous relationships, maps for geographic data).
 
 ---
 
@@ -284,6 +284,44 @@ Although Spain generated the highest total revenue, Germany produced the highest
 | Spain generated highest total revenue   | Largest customer base     |
 | Germany generated highest average spend | Higher customer value     |
 | Montenegro significantly underperformed | Low commercial return     |
+
+
+
+---
+
+## Key Findings
+
+### Customer Demographics
+The customer base spans 8 countries with ages ranging from 28 to 84 (average 55). The majority are married or in relationships, and most are educated to graduate level or above. Spain has by far the largest customer base (994 customers) and highest total revenue ($652,074), but Germany produces the highest average spend per customer ($694.50), followed closely by the USA ($689.07).
+
+### Product Sales
+
+| Product | Performance |
+|---------|-------------|
+| Alcohol | 50% of all sales — most popular in every country and across all marital statuses |
+| Meat | Second highest overall |
+| Vegetables | Consistently worst performing across all segments |
+
+Product preferences do **not** meaningfully vary by marital status, country, or whether children or teenagers are present in the household. Alcohol dominates universally.
+
+### Advertising Effectiveness
+
+| Channel | Avg Spend | Notes |
+|---------|-----------|-------|
+| Instagram | $1,609 | Highest average spend; highest income customers |
+| Facebook | $1,541 | Second highest |
+| Brochure | $1,370 | Third — but least effective by country/marital analysis |
+| Twitter | $848 | Lower average spend |
+| None (no ad exposure) | $532 | Baseline |
+
+Brochure advertising is the least effective channel across nearly every country and marital status segment — the only exception being Montenegro (two customers, statistically negligible).
+
+Bulk email performs surprisingly well among single customers, approaching Twitter effectiveness for that demographic.
+
+---
+
+
+
 
 #### Recommendation
 
@@ -366,106 +404,6 @@ The analysis focused on transforming raw customer and marketing data into action
 
 ---
 
-
-# Customer Demographics & Marketing Channel Effectiveness Analysis
-**LSE Data Analytics Career Accelerator — DA201 | June 2025**
-
-> *Which customers does this retailer serve, which advertising channels drive the most value, and do demographics influence what people buy?*
-
----
-
-## Executive Summary
-
-This project analyses customer purchasing behaviour and advertising effectiveness for a global supermarket operating across eight countries. Using Excel, SQL, and Tableau, the analysis identifies clear demographic patterns in the customer base, pinpoints which advertising channels drive the highest average spend, and determines whether product preferences vary by demographic group.
-
-**Key results:** Alcohol accounts for 50% of all product sales regardless of country, marital status, or household composition. Instagram and Facebook drive the highest average customer spend among those exposed to advertising. Brochure advertising is consistently the least effective channel across all segments. Spain dominates revenue by volume but Germany and South Africa produce higher average spend per customer.
-
----
-
-## Business Problem
-
-A global supermarket operating in eight countries wanted to better understand its customer base to inform marketing strategy and resource allocation. Three core business questions drove the analysis:
-
-> **1. What are the demographics of our customers?**
-> **2. Which advertising channels are most effective?**
-> **3. Which products sell best, and does that vary by customer demographic?**
-
-The answers were intended to support executive decision-making on advertising spend, market prioritisation, and product focus.
-
----
-
-## Data Sources
-
-| File | Contents |
-|------|----------|
-| `marketing_data.csv` | Customer demographics, purchase history by product category, recency, campaign response |
-| `ad_data.csv` | Advertising channel exposure per customer (Bulkmail, Twitter, Instagram, Facebook, Brochure) |
-
-Two datasets were joined on customer ID using SQL to enable cross-analysis of demographics, purchasing behaviour, and advertising exposure.
-
----
-
-## Tools & Skills Used
-
-| Category | Tools |
-|----------|-------|
-| **Data Cleaning & EDA** | Excel (advanced functions, pivot tables, calculated columns) |
-| **Database & Querying** | PostgreSQL (table creation, INNER JOIN, CASE, GREATEST/LEAST, aggregate functions) |
-| **Visualisation & Dashboard** | Tableau (interactive dashboard, filters, multiple chart types) |
-| **Framework** | IDEAL Problem-Solving Framework (Bransford & Stein, 1984) |
-
-**Skills demonstrated:** End-to-end data workflow · Data cleaning and validation · SQL database design · Multi-table querying · Outlier detection and handling · Dashboard design · Stakeholder-focused insight communication
-
----
-
-## Analytical Approach
-
-### 1. Data Cleaning (Excel)
-
-The raw dataset required significant preparation before analysis could begin:
-
-- **Date formatting** standardised to DD/MM/YYYY
-- **Duplicate detection** — primary key (ID) checked for uniqueness; rows with identical entities across all fields except PK removed as implausible duplicates
-- **Outlier removal** — three records showing customer ages over 124 removed as implausible; one income outlier of $666,666 (far above the next highest value) excluded from income-based analysis
-- **Standardisation** — marital status categories consolidated: 'Single' and 'Alone' merged; 'YOLO' and 'Absurd' removed (three records, negligible impact)
-- **Calculated columns added** — `Age` (derived from Year_Birth) and `Total_Spend` (sum of all product categories per customer)
-- **Column renaming** — product category codes translated to meaningful labels (e.g. 'AmtLiq' → 'Alcohol')
-- **Data type validation** — Excel TYPE function used to ensure consistent data types throughout
-
-**Key observation:** The youngest customer in the cleaned dataset would have been 15 at the time of registration — flagged as a data quality concern worth investigating further.
-
-### 2. SQL Analysis (PostgreSQL)
-
-A PostgreSQL database was created with two tables — `Marketing_Data` and `ad_data` — with customer ID as the primary key and join field.
-
-Queries addressed each of the three business questions:
-
-**Revenue and product analysis:**
-- Total spend aggregated by country using `SUM` and `GROUP BY`
-- Most and least popular product categories identified per country and marital status using `GREATEST` and `LEAST` functions within `CASE` statements
-- Product preferences cross-referenced by household composition (kids/teens at home vs not)
-
-**Advertising effectiveness:**
-- Boolean ad exposure fields cast to integer to enable summation
-- Most and least effective channels identified per country and marital status
-- A `Media` column was engineered in `ad_data` to enable average spend analysis by channel — customers joined to their advertising exposure and average spend calculated per channel using `ROUND(AVG())` and `ORDER BY Avg_Spend DESC`
-
-**Key SQL technique:** Boolean-to-integer casting (`::INT`) to aggregate advertising exposure data, and `GREATEST`/`LEAST` functions to identify highest and lowest values across multiple product or channel columns within a single query.
-
-### 3. Dashboard Design (Tableau)
-
-The Tableau dashboard was designed with a non-technical executive audience in mind, using a calm blue colour scheme chosen for readability and professionalism. Prototype layouts were planned on paper before build.
-
-**Dashboard components:**
-- Age range distribution of customers
-- Marital status breakdown
-- Education level distribution
-- World map showing geographical customer distribution and density
-- Income distribution by customer count
-- Total sales by product category
-- Advertising campaign effectiveness by channel and country
-
-Design decisions prioritised clarity over complexity — filters allow stakeholder exploration without requiring analytical knowledge. Chart types were chosen to match the nature of each variable (bar charts for categories, scatter plots for continuous relationships, maps for geographic data).
 
 ---
 
