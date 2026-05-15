@@ -241,15 +241,21 @@ Design decisions prioritised clarity over complexity - filters allow stakeholder
 
 ## Key Findings & Business Recommendations
 
+### Customer Demographics
+The customer base spans 8 countries with ages ranging from 28 to 84 (average 55). The majority are married or in relationships, and most are educated to graduate level or above. Spain has by far the largest customer base (994 customers) and highest total revenue ($652,074), but Germany produces the highest average spend per customer ($694.50), followed closely by the USA ($689.07).
+
+
+
+
 ### Finding 1: Product Sales Were Highly Concentrated
 
 Alcohol products represented approximately half of all product sales, with meat products generating the second-highest revenue contribution.
 
-| Product Category Insight                        | Business Impact                    |
-| ----------------------------------------------- | ---------------------------------- |
-| Alcohol dominated sales performance             | Core commercial revenue driver     |
-| Meat products showed consistently strong demand | High-value supporting category     |
-| Vegetables and chocolate underperformed         | Potential optimisation opportunity |
+| Product      | Category Insight                                                                  | Business Impact                    |
+| ------------ | ----------------------------------------------------------------------------------|------------------------------------|
+| Alcohol      | 50% of all sales — most popular in every country and across all marital statuse.  | Core commercial revenue driver     |
+| Meat         | Second highest sales overall                                                      | High-value supporting category     |
+| Vegetables   | Consistently worst performing across all segments                                 | Potential optimisation opportunity |
 
 #### Recommendation
 
