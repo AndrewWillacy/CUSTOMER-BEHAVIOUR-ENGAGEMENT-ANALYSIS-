@@ -426,11 +426,10 @@ The primary objectives of the analysis were to:
 
 ```
 ├── data/
-│   ├── marketing_data_clean.csv       # Cleaned marketing dataset
-│   └── ad_data_clean.csv              # Cleaned advertising dataset
-
-│   ├── marketing_data_clean.csv       # Cleaned marketing dataset
-│   └── ad_data_clean.csv              # Cleaned advertising dataset
+│   ├── marketing_data.csv             # Raw marketing dataset
+│   └── ad_data.csv                    # Raw advertising dataset
+│   ├── marketing_data_cleaned.csv     # Cleaned marketing dataset
+│   └── ad_data_cleaned.csv            # Cleaned advertising dataset
 ├── sql/
 │   └── SQL Queries                    # All SQL queries with inline comments
 ├── tableau/
