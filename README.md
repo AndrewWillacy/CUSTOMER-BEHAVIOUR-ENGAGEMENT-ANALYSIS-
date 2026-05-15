@@ -66,7 +66,9 @@ The combined datasets included:
 * Geographic sales information
 * Customer engagement behaviour
 
-# Database Structure
+--
+
+## Database Structure
 
 The project uses two PostgreSQL tables:
 
@@ -75,7 +77,7 @@ Marketing_Data
 Includes demographics, purchase details, and customer behaviour metrics such as:
 Age, Income, Total_Spend, Education, Marital_Status, Country, Kids/Teens, product category spend, and more.
 
-Figure 2: Marketing_Data Table
+Figure 1: Marketing_Data Table
 <img width="900" height="600" alt="Screenshot 2025-12-13 151717" src="https://github.com/user-attachments/assets/fc31ca9c-3dba-44e6-b499-d2c689e799ee" />
 
 ad_data
@@ -83,8 +85,9 @@ ad_data
 Contains binary indicators showing whether a customer was exposed to each advertising channel:
 Twitter, Instagram, Bulkmail, Facebook, Brochure
 
-Figure 3: Ad_Data Table
+Figure 2: Ad_Data Table
 <img width="900" height="300" alt="Screenshot 2025-12-13 151842" src="https://github.com/user-attachments/assets/0484f707-b2a5-4054-aeab-749ae308e73e" />
+
 ---
 
 ## Tools & Skills Used
@@ -100,7 +103,6 @@ Figure 3: Ad_Data Table
 **Skills demonstrated:**
 
 End-to-end data workflow · Data cleaning and validation · Exploratory analysis (EDA) · SQL database building & querying · Outlier detection and handling ·  Dashboard development · Business insight generation · Stakeholder-focused reporting · Data visualisation · Commercial analysis
-
 
 ---
 
@@ -172,9 +174,10 @@ Visualisations created during exploratory analysis included:
 * Income distribution analysis
 * Product category comparisons
 
-Figure 1: The number of customers by country
+Figure 3: The number of customers by country
 
 <img width="750" height="450" alt="Screenshot 2025-12-13 134910" src="https://github.com/user-attachments/assets/e5d1c800-453f-48d9-80ae-5ae6a2a84731" />
+
 ---
 
 ### 3. SQL Analysis (PostgreSQL)
