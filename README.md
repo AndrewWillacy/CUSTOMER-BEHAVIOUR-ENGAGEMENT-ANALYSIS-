@@ -153,6 +153,9 @@ Visualisations created during exploratory analysis included:
 * Income distribution analysis
 * Product category comparisons
 
+Figure 1: The number of customers by country
+
+<img width="750" height="450" alt="Screenshot 2025-12-13 134910" src="https://github.com/user-attachments/assets/e5d1c800-453f-48d9-80ae-5ae6a2a84731" />
 ---
 
 ### 3. SQL Analysis (PostgreSQL)
