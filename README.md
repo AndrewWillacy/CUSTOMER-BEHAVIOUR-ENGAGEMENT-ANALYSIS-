@@ -273,7 +273,7 @@ Product preferences do **not** meaningfully vary by marital status, country, or 
 
 #### Recommendation
 
-> Prioritise inventory, promotions, and marketing activity around high-performing product categories while reviewing the commercial viability of underperforming categories.
+> Prioritise inventory, promotions, and marketing activity around high-performing product categories (alcohol and meat) while reviewing the commercial viability of underperforming categories such as vegetables
 
 ---
 
@@ -316,7 +316,9 @@ Although Spain generated the highest total revenue, Germany produced the highest
 
 #### Recommendation
 
-> Germany and USA are porential growth areas. Montenegro is by far the worst performing and should be dropped
+> Investigate Germany — smaller customer base but highest average spend per customer suggests high-value segment worth developing
+> Review Montenegro — two customers and negligible revenue; assess whether to maintain or exit this market
+
 
 ---
 ## Limitations
@@ -382,17 +384,6 @@ The analysis focused on transforming raw customer and marketing data into action
 
 ---
 
-
-## Business Recommendations
-
-- **Prioritise Instagram and Facebook** for advertising investment — both drive the highest average customer spend
-- **Discontinue or significantly reduce brochure advertising** — consistently least effective across all segments
-- **Target single customers with bulk email** — disproportionately effective for this demographic
-- **Focus on alcohol and meat** as core product categories; deprioritise vegetable promotions
-- **Investigate Germany** — smaller customer base but highest average spend per customer suggests high-value segment worth developing
-- **Review Montenegro** — two customers and negligible revenue; assess whether to maintain or exit this market
-
----
 
 
 
