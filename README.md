@@ -296,11 +296,10 @@ Bulk email performs surprisingly well among single customers, approaching Twitte
 #### Recommendation
 
 > Increase focus on digital and social media marketing while reducing reliance on lower-performing brochure campaigns.
-- **Prioritise Instagram and Twitter (X)** for advertising investment — both drive the highest average customer spend
-- **Discontinue or significantly reduce brochure advertising** — consistently least effective across all segments
-- **Target single customers with bulk email** — disproportionately effective for this demographic
+> Prioritise Instagram and Twitter (X)** for advertising investment — both drive the highest average customer spend
+> Discontinue or significantly reduce brochure advertising** - consistently least effective across all segments
+> Target single customers with bulk email** — disproportionately effective for this demographic
 ---
-
 
 ### Finding 4 Geographic Performance Varied Significantly
 
