@@ -410,6 +410,15 @@ The project deliverables included:
 | Who are the customers? | Primarily aged 28–84 (avg 55), married/together, graduate-educated, concentrated in Spain |
 | Which ad channel is most effective? | Instagram (highest avg spend $1,609); Brochure consistently least effective |
 | Which products sell best? | Alcohol (50% of all sales) universally; no meaningful demographic variation |
+| Does purchasing behaviour differ across demographics |
+| Are there geographic differences in sales perfromance |
+
+
+The primary objectives of the analysis were to:
+
+* Understand purchasing behaviour across customer groups
+* Explore geographic differences in customer behaviour and sales performance
+* Provide actionable recommendations to improve marketing efficiency and commercial performance
 
 ---
 
