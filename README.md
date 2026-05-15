@@ -427,25 +427,23 @@ The primary objectives of the analysis were to:
 ```
 Customer-Behaviour-Engagement-Analysis
 ├── 2Market Tableau Dashboard
-
+│   └── Dashboard.md                   
+│       └──
 ├── CSV files
-│   ├── marketing_data.csv             # Raw marketing dataset
-│   └── ad_data.csv                    # Raw advertising dataset
+│   └── Files Cleaned
+|       ├── marketing_data_cleaned.csv     # Cleaned marketing dataset
+│       └── ad_data_cleaned.csv            # Cleaned advertising dataset
+|   └──Files RAW data
+│      ├── marketing_data.csv              # Raw marketing dataset
+│      └── ad_data.csv                     # Raw advertising dataset
+├── SQL Queries            
+│   └── SQL Queries                        # SQL code for multipe queries used in the analysis
+├── Presentation slides.pdf                # Presentation slide deck as pdf
+├── README.md                              # Full analysis
+├── Tableau Dashboard.twbx                 # Static Tableau dashboard (Can be opened with Tableau)
+├── Technical Report.pdf                   # Technical report of analysis
+├── metadata.txt                           # Metadata gives descriptions of all the fields in the tables
 
-├── data/
-│   ├── marketing_data.csv             # Raw marketing dataset
-│   └── ad_data.csv                    # Raw advertising dataset
-│   ├── marketing_data_cleaned.csv     # Cleaned marketing dataset
-│   └── ad_data_cleaned.csv            # Cleaned advertising dataset
-├── sql/
-│   └── SQL Queries                    # All SQL queries with inline comments
-├── tableau/
-│   └── dashboard.twbx                 # Tableau packaged workbook
-├── report/
-│   └── Technical Report.pdf           # Technical report
-└── README.md
-│   └── Metadata.txt                   # Metadata gives descriptions of all the fields in the tables
-└── Presentation slides.pdf            # The slides used in the presentation as a pdf
 ```
 
 ## About
