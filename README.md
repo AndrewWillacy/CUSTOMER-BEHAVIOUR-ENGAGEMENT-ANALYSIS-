@@ -355,6 +355,18 @@ Potential future enhancements include:
 
 ---
 
+## Further Analysis
+
+- **Customer segmentation modelling using clustering techniques:** Segmenting customers by age, income, marital status, education etc
+- **Development of real-time dashboards in Power BI or Tableau:** Live updates to the database linked to real time dashboards
+- **Longitudinal analysis:** Track how customer demographics and purchasing behaviour shift over time
+- **Multi-channel exposure & A/B testing:** Properly account for customers exposed to more than one advertising channel to understand combined channel effects and test different ad media against each other
+- **Country-level deep dive:** Explore why Germany produces higher average spend despite a smaller customer base
+- **Age-segmented advertising analysis:** Test whether younger and older customer segments respond differently to specific channels
+- **Income normalisation:** Clarify whether income figures are annual or monthly and normalise accordingly before including income in regression or clustering analysis
+---
+
+
 ## Dashboard & Deliverables
 
 The project deliverables included:
