@@ -425,6 +425,13 @@ The primary objectives of the analysis were to:
 ## Repository Structure
 
 ```
+Customer-Behaviour-Engagement-Analysis
+├── 2Market Tableau Dashboard
+
+├── CSV files
+│   ├── marketing_data.csv             # Raw marketing dataset
+│   └── ad_data.csv                    # Raw advertising dataset
+
 ├── data/
 │   ├── marketing_data.csv             # Raw marketing dataset
 │   └── ad_data.csv                    # Raw advertising dataset
