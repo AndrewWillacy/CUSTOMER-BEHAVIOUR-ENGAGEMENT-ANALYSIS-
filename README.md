@@ -428,13 +428,18 @@ The primary objectives of the analysis were to:
 ├── data/
 │   ├── marketing_data_clean.csv       # Cleaned marketing dataset
 │   └── ad_data_clean.csv              # Cleaned advertising dataset
+
+│   ├── marketing_data_clean.csv       # Cleaned marketing dataset
+│   └── ad_data_clean.csv              # Cleaned advertising dataset
 ├── sql/
-│   └── 2market_queries.sql            # All SQL queries with inline comments
+│   └── SQL Queries                    # All SQL queries with inline comments
 ├── tableau/
 │   └── dashboard.twbx                 # Tableau packaged workbook
 ├── report/
-│   └── Willacy_Andrew_DA201_Report.pdf
+│   └── Technical Report.pdf           # Technical report
 └── README.md
+│   └── Metadata.txt                   # Metadata gives descriptions of all the fields in the tables
+└── Presentation slides.pdf            # The slides used in the presentation as a pdf
 ```
 
 ## About
