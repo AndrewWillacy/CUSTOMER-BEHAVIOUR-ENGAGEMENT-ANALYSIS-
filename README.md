@@ -267,7 +267,11 @@ Product preferences do **not** meaningfully vary by marital status, country, or 
 
 ### Finding 2: Social Media Significantly Outperformed Traditional Advertising
 
-Twitter (X), Instagram, and Facebook consistently generated stronger campaign engagement than brochure-based advertising.
+Twitter (X), Instagram, and Facebook consistently generated stronger campaign engagement than brochure-based advertising. 
+Brochure advertising is the least effective channel across nearly every country and marital status segment — the only exception being Montenegro (two customers, statistically negligible).
+
+Bulk email performs surprisingly well among single customers, approaching Twitter effectiveness for that demographic.
+
 
 | Advertising Channel  | Relative Performance           |
 | -------------------- | ------------------------------ |
@@ -279,24 +283,7 @@ Twitter (X), Instagram, and Facebook consistently generated stronger campaign en
 
 #### Recommendation
 
-Increase focus on digital and social media marketing while reducing reliance on lower-performing brochure campaigns.
-
----
-
-### Advertising Effectiveness
-
-| Channel | Avg Spend | Notes |
-|---------|-----------|-------|
-| Instagram | $1,609 | Highest average spend; highest income customers |
-| Facebook | $1,541 | Second highest |
-| Brochure | $1,370 | Third — but least effective by country/marital analysis |
-| Twitter | $848 | Lower average spend |
-| None (no ad exposure) | $532 | Baseline |
-
-Brochure advertising is the least effective channel across nearly every country and marital status segment — the only exception being Montenegro (two customers, statistically negligible).
-
-Bulk email performs surprisingly well among single customers, approaching Twitter effectiveness for that demographic.
-
+> Increase focus on digital and social media marketing while reducing reliance on lower-performing brochure campaigns.
 
 ---
 
