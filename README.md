@@ -315,7 +315,7 @@ Although Spain generated the highest total revenue, Germany produced the highest
 
 #### Recommendation
 
-> Germany and USA are porential growth area. Montenegro is by far the worst performing and should be dropped
+> Germany and USA are porential growth areas. Montenegro is by far the worst performing and should be dropped
 
 ---
 
