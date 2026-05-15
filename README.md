@@ -338,6 +338,9 @@ Although Spain generated the highest total revenue, Germany produced the highest
 | Germany generated highest average spend | Higher customer value     |
 | Montenegro significantly underperformed | Low commercial return     |
 
+Figure 6: Average customer spend by country
+
+<img width="650" height="400" alt="Screenshot 2025-12-13 135503" src="https://github.com/user-attachments/assets/b6d44b4d-d328-478a-939d-2bfd98ab2077" />
 
  Spain has by far the largest customer base (994 customers) and highest total revenue ($652,074), but Germany produces the highest average spend per customer ($694.50), followed closely by the USA ($689.07).
 
