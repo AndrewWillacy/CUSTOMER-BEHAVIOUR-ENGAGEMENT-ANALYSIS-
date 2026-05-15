@@ -241,13 +241,26 @@ Design decisions prioritised clarity over complexity - filters allow stakeholder
 
 ## Key Findings & Business Recommendations
 
-### Customer Demographics
-The customer base spans 8 countries with ages ranging from 28 to 84 (average 55). The majority are married or in relationships, and most are educated to graduate level or above. Spain has by far the largest customer base (994 customers) and highest total revenue ($652,074), but Germany produces the highest average spend per customer ($694.50), followed closely by the USA ($689.07).
+### Finding 1: Demographic Patterns Influenced Engagement Behaviour
+
+Customer demographics demonstrated measurable differences in purchasing and campaign engagement behaviour.
+
+Key observations included:
+
+* Married and partnered customers formed the largest customer group
+* Most customers were educated to graduate level or above
+* The customer base spans 8 countries
+* Customer age ranges from 28 to 84 (average 55)
+* Bulk email campaigns performed particularly well amongst single customers
+
+#### Recommendation
+
+> Use demographic segmentation to support more targeted and personalised marketing strategies.
+
+---
 
 
-
-
-### Finding 1: Product Sales Were Highly Concentrated
+### Finding 2: Product Sales Were Highly Concentrated
 
 Alcohol products represented approximately half of all product sales, with meat products generating the second-highest revenue contribution.
 
@@ -265,7 +278,7 @@ Product preferences do **not** meaningfully vary by marital status, country, or 
 
 ---
 
-### Finding 2: Social Media Significantly Outperformed Traditional Advertising
+### Finding 3: Social Media Significantly Outperformed Traditional Advertising
 
 Twitter (X), Instagram, and Facebook consistently generated stronger campaign engagement than brochure-based advertising. 
 Brochure advertising is the least effective channel across nearly every country and marital status segment — the only exception being Montenegro (two customers, statistically negligible).
@@ -288,7 +301,7 @@ Bulk email performs surprisingly well among single customers, approaching Twitte
 ---
 
 
-### Finding 3: Geographic Performance Varied Significantly
+### Finding 4 Geographic Performance Varied Significantly
 
 Although Spain generated the highest total revenue, Germany produced the highest average spend per customer.
 
@@ -299,26 +312,15 @@ Although Spain generated the highest total revenue, Germany produced the highest
 | Montenegro significantly underperformed | Low commercial return     |
 
 
-
----
-
-
-
-### Finding 4: Demographic Patterns Influenced Engagement Behaviour
-
-Customer demographics demonstrated measurable differences in purchasing and campaign engagement behaviour.
-
-Key observations included:
-
-* Married and partnered customers formed the largest customer group
-* Most customers were educated to graduate level or above
-* Bulk email campaigns performed particularly well amongst single customers
+ Spain has by far the largest customer base (994 customers) and highest total revenue ($652,074), but Germany produces the highest average spend per customer ($694.50), followed closely by the USA ($689.07).
 
 #### Recommendation
 
-Use demographic segmentation to support more targeted and personalised marketing strategies.
+> 
 
 ---
+
+
 
 ## Limitations
 
