@@ -253,13 +253,15 @@ Alcohol products represented approximately half of all product sales, with meat 
 
 | Product      | Category Insight                                                                  | Business Impact                    |
 | ------------ | ----------------------------------------------------------------------------------|------------------------------------|
-| Alcohol      | 50% of all sales — most popular in every country and across all marital statuse.  | Core commercial revenue driver     |
+| Alcohol      | 50% of all sales — most popular in every country and across all marital statuses  | Core commercial revenue driver     |
 | Meat         | Second highest sales overall                                                      | High-value supporting category     |
 | Vegetables   | Consistently worst performing across all segments                                 | Potential optimisation opportunity |
 
+Product preferences do **not** meaningfully vary by marital status, country, or whether children or teenagers are present in the household. Alcohol dominates universally.
+
 #### Recommendation
 
-Prioritise inventory, promotions, and marketing activity around high-performing product categories while reviewing the commercial viability of underperforming categories.
+> Prioritise inventory, promotions, and marketing activity around high-performing product categories while reviewing the commercial viability of underperforming categories.
 
 ---
 
