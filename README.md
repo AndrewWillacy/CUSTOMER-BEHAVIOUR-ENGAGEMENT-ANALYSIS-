@@ -296,7 +296,9 @@ Bulk email performs surprisingly well among single customers, approaching Twitte
 #### Recommendation
 
 > Increase focus on digital and social media marketing while reducing reliance on lower-performing brochure campaigns.
-
+- **Prioritise Instagram and Twitter (X)** for advertising investment — both drive the highest average customer spend
+- **Discontinue or significantly reduce brochure advertising** — consistently least effective across all segments
+- **Target single customers with bulk email** — disproportionately effective for this demographic
 ---
 
 
@@ -329,9 +331,9 @@ Several limitations were identified during the analysis:
 - **Cross-sectional snapshot:** No time dimension in the data; trends over time cannot be assessed
 - **Small advertising sample:** Only 292 customers were exposed to at least one advertising channel, limiting the statistical robustness of channel effectiveness conclusions
 - **Single ad exposure assumed:** The methodology assigns one channel per customer based on the last Boolean flag set — customers exposed to multiple channels are not fully accounted for
-- **The dataset represented historical behaviour only and could not fully predict future trends**
-- **Several low-volume geographic markets limited comparative analysis reliability**
-- **Customer lifetime value and retention metrics were unavailable**
+- **The dataset represented historical behaviour only and could not fully predict future trends:** Insufficient data
+- **Several low-volume geographic markets limited comparative analysis reliability:** Montenegro significantly small than Spain or Germany
+- **Customer lifetime value and retention metrics were unavailable:** Not available in the data
 
 Despite these limitations, the dataset was sufficiently robust to identify clear behavioural and commercial trends.
 
@@ -393,16 +395,7 @@ The analysis focused on transforming raw customer and marketing data into action
 
 ---
 
-## Limitations
 
-- **Small advertising sample:** Only 292 customers were exposed to at least one advertising channel, limiting the statistical robustness of channel effectiveness conclusions
-- **Single ad exposure assumed:** The methodology assigns one channel per customer based on the last Boolean flag set — customers exposed to multiple channels are not fully accounted for
-- **Income data inconsistency:** Income values appear to be a mix of annual and monthly figures; no normalisation was possible without additional context
-- **15-year-old customer:** The youngest customer would have been 15 at registration — raises data collection questions that could not be resolved with available information
-- **Spending score unknown:** No metadata explaining how `Count_success` was calculated — limits interpretation of campaign success metrics
-- **Cross-sectional snapshot:** No time dimension in the data; trends over time cannot be assessed
-
----
 
 ## Further Analysis
 
