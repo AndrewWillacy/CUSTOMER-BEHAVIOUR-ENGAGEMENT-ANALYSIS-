@@ -280,7 +280,7 @@ Key observations included:
 * The customer base spans 8 countries
 * Customer age ranges from 28 to 84 (average 55)
 
-#### Recommendation
+#### Recommendations
 
 > Use demographic segmentation to support more targeted and personalised marketing strategies.
 
@@ -298,7 +298,7 @@ Alcohol products represented approximately half of all product sales, with meat 
 
 Product preferences do **not** meaningfully vary by marital status, country, or whether children or teenagers are present in the household. Alcohol dominates universally.
 
-#### Recommendation
+#### Recommendations
 
 > Prioritise inventory, promotions, and marketing activity around high-performing product categories (alcohol and meat) while reviewing the commercial viability of underperforming categories such as vegetables
 
@@ -320,7 +320,11 @@ Bulk email performs surprisingly well among single customers, approaching Twitte
 | Bulk Email           | Effective for single customers |
 | Brochure Advertising | Weakest-performing             |
 
-#### Recommendation
+Figure 7: Advertising channel effectiveness
+
+<img width="650" height="310" alt="Screenshot 2025-12-13 135545" src="https://github.com/user-attachments/assets/a7fd352c-f419-4159-9aa8-b9e4c540dded" />
+
+#### Recommendations
 
 > Increase focus on digital and social media marketing while reducing reliance on lower-performing brochure campaigns  
 > Prioritise Instagram and Twitter (X) for advertising investment — both drive the highest average customer spend  
