@@ -427,8 +427,7 @@ The primary objectives of the analysis were to:
 ```
 Customer-Behaviour-Engagement-Analysis
 ├── 2Market Tableau Dashboard
-│   └── Dashboard.md                   
-│       └──
+│   └── Dashboard.md                       # Link to live Tableau dashboard 
 ├── CSV files
 │   └── Files Cleaned
 |       ├── marketing_data_cleaned.csv     # Cleaned marketing dataset
