@@ -320,31 +320,20 @@ Although Spain generated the highest total revenue, Germany produced the highest
 ---
 ## Limitations
 
+Several limitations were identified during the analysis:
+
 - **Income data inconsistency:** Income values appear to be a mix of annual and monthly figures; no normalisation was possible without additional context
-- * Some demographic categories required manual standardisation:** Non standard entries for categories such as "Marital status"
+- **Some demographic categories required manual standardisation:** eg Non standard entries for categories such as "Marital status"
 - **15-year-old customer:** The youngest customer would have been 15 at registration — raises data collection questions that could not be resolved with available information
 - **Spending score unknown:** No metadata explaining how `Count_success` was calculated — limits interpretation of campaign success metrics
 - **Cross-sectional snapshot:** No time dimension in the data; trends over time cannot be assessed
 - **Small advertising sample:** Only 292 customers were exposed to at least one advertising channel, limiting the statistical robustness of channel effectiveness conclusions
 - **Single ad exposure assumed:** The methodology assigns one channel per customer based on the last Boolean flag set — customers exposed to multiple channels are not fully accounted for
-
-
-
----
-
-## Limitations
-
-Several limitations were identified during the analysis:
-
-* Income data appeared inconsistently recorded in some cases
-* Some demographic categories required manual standardisation
-* The dataset represented historical behaviour only and could not fully predict future trends
-* Several low-volume geographic markets limited comparative analysis reliability
-* Customer lifetime value and retention metrics were unavailable
+- **The dataset represented historical behaviour only and could not fully predict future trends**
+- **Several low-volume geographic markets limited comparative analysis reliability**
+- **Customer lifetime value and retention metrics were unavailable**
 
 Despite these limitations, the dataset was sufficiently robust to identify clear behavioural and commercial trends.
-
-
 
 ---
 
