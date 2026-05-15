@@ -258,7 +258,6 @@ Key observations included:
 
 ---
 
-
 ### Finding 2: Product Sales Were Highly Concentrated
 
 Alcohol products represented approximately half of all product sales, with meat products generating the second-highest revenue contribution.
@@ -319,7 +318,6 @@ Although Spain generated the highest total revenue, Germany produced the highest
 > Investigate Germany — smaller customer base but highest average spend per customer suggests high-value segment worth developing
 > Review Montenegro — two customers and negligible revenue; assess whether to maintain or exit this market
 
-
 ---
 ## Limitations
 
@@ -377,21 +375,6 @@ The analysis focused on transforming raw customer and marketing data into action
 
 
 
----
-
-
----
-
-
-
-
-## Further Analysis
-
-- **Longitudinal analysis** — track how customer demographics and purchasing behaviour shift over time
-- **Multi-channel exposure** — properly account for customers exposed to more than one advertising channel to understand combined channel effects
-- **Country-level deep dive** — explore why Germany produces higher average spend despite a smaller customer base
-- **Age-segmented advertising analysis** — test whether younger and older customer segments respond differently to specific channels
-- **Income normalisation** — clarify whether income figures are annual or monthly and normalise accordingly before including income in regression or clustering analysis
 
 ---
 
