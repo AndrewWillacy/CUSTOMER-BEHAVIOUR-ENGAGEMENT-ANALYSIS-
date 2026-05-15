@@ -289,49 +289,7 @@ Although Spain generated the highest total revenue, Germany produced the highest
 
 ---
 
-## Key Findings
 
-### Customer Demographics
-The customer base spans 8 countries with ages ranging from 28 to 84 (average 55). The majority are married or in relationships, and most are educated to graduate level or above. Spain has by far the largest customer base (994 customers) and highest total revenue ($652,074), but Germany produces the highest average spend per customer ($694.50), followed closely by the USA ($689.07).
-
-### Product Sales
-
-| Product | Performance |
-|---------|-------------|
-| Alcohol | 50% of all sales — most popular in every country and across all marital statuses |
-| Meat | Second highest overall |
-| Vegetables | Consistently worst performing across all segments |
-
-Product preferences do **not** meaningfully vary by marital status, country, or whether children or teenagers are present in the household. Alcohol dominates universally.
-
-### Advertising Effectiveness
-
-| Channel | Avg Spend | Notes |
-|---------|-----------|-------|
-| Instagram | $1,609 | Highest average spend; highest income customers |
-| Facebook | $1,541 | Second highest |
-| Brochure | $1,370 | Third — but least effective by country/marital analysis |
-| Twitter | $848 | Lower average spend |
-| None (no ad exposure) | $532 | Baseline |
-
-Brochure advertising is the least effective channel across nearly every country and marital status segment — the only exception being Montenegro (two customers, statistically negligible).
-
-Bulk email performs surprisingly well among single customers, approaching Twitter effectiveness for that demographic.
-
----
-
-
-
-
-#### Recommendation
-
-Develop market-specific strategies focused on:
-
-* Customer growth in high-volume regions
-* Customer value optimisation in high-spend regions
-* Commercial review of underperforming markets
-
----
 
 ### Finding 4: Demographic Patterns Influenced Engagement Behaviour
 
