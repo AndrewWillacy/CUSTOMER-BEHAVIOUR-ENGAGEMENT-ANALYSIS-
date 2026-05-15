@@ -198,7 +198,7 @@ The database structure included:
 
 #### Campaign Effectiveness
 
-* Twitter was identified as the highest-performing advertising channel
+* Twitter (X) was identified as the highest-performing advertising channel
 * Instagram and Facebook also demonstrated strong engagement performance
 * Brochure advertising consistently underperformed across most demographic groups
 * Bulk email campaigns showed stronger performance amongst single customers than expected
@@ -213,7 +213,8 @@ The database structure included:
 
 ### 4. Dashboard Design & Development
 
-A stakeholder-focused Tableau dashboard was developed to communicate insights clearly and support business decision-making.
+The Tableau dashboard was designed with a non-technical executive audience in mind, using a calm blue colour scheme chosen for readability, accessibility and professionalism. Prototype layouts were planned on paper before build.
+
 
 The dashboard design prioritised:
 
@@ -234,30 +235,7 @@ Dashboard features included:
 | Marketing campaign performance analysis | Evaluate advertising effectiveness |
 | Income and spending comparisons         | Explore customer value patterns    |
 
-The dashboard was designed using a consistent colour scheme and structured layout to support non-technical stakeholders in interpreting insights quickly and effectively.
-
----
-## Analytical Approach
-
-
-
-
-### 3. Dashboard Design (Tableau)
-
-The Tableau dashboard was designed with a non-technical executive audience in mind, using a calm blue colour scheme chosen for readability and professionalism. Prototype layouts were planned on paper before build.
-
-**Dashboard components:**
-- Age range distribution of customers
-- Marital status breakdown
-- Education level distribution
-- World map showing geographical customer distribution and density
-- Income distribution by customer count
-- Total sales by product category
-- Advertising campaign effectiveness by channel and country
-
 Design decisions prioritised clarity over complexity — filters allow stakeholder exploration without requiring analytical knowledge. Chart types were chosen to match the nature of each variable (bar charts for categories, scatter plots for continuous relationships, maps for geographic data).
-
----
 
 ---
 
