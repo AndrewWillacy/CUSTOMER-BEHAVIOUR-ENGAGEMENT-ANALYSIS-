@@ -66,7 +66,7 @@ The combined datasets included:
 * Geographic sales information
 * Customer engagement behaviour
 
---
+---
 
 ## Database Structure
 
@@ -261,6 +261,9 @@ Dashboard features included:
 | Income and spending comparisons         | Explore customer value patterns    |
 
 Design decisions prioritised clarity over complexity - filters allow stakeholder exploration without requiring analytical knowledge. Chart types were chosen to match the nature of each variable (bar charts for categories, scatter plots for continuous relationships, maps for geographic data).
+
+Figure 4: Tableau Dashboard
+<img width="900" height="600" alt="Screenshot 2025-12-13 153958" src="https://github.com/user-attachments/assets/685b0d12-1b62-406f-95fd-34674e667c78" />
 
 ---
 
