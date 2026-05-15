@@ -340,26 +340,12 @@ Despite these limitations, the dataset was sufficiently robust to identify clear
 
 ---
 
-## Future Steps
-
-Potential future enhancements include:
-
-* Customer segmentation modelling using clustering techniques
-* Predictive modelling for campaign response behaviour
-* Customer lifetime value (CLV) analysis
-* Automated ETL pipeline development
-* Forecasting product demand by region
-* Development of real-time dashboards in Power BI or Tableau
-* Integration of transactional and loyalty programme data
-* A/B testing framework for campaign optimisation
-
----
-
 ## Further Analysis
 
 - **Customer segmentation modelling using clustering techniques:** Segmenting customers by age, income, marital status, education etc
 - **Development of real-time dashboards in Power BI or Tableau:** Live updates to the database linked to real time dashboards
 - **Longitudinal analysis:** Track how customer demographics and purchasing behaviour shift over time
+- **Customer lifetime value (CLV) & churn analysis:** The net profit or revenue the business expects to earn per customer through the lifetime of the relationship. Churn value will predict how likely a customer is to stop using the business
 - **Multi-channel exposure & A/B testing:** Properly account for customers exposed to more than one advertising channel to understand combined channel effects and test different ad media against each other
 - **Country-level deep dive:** Explore why Germany produces higher average spend despite a smaller customer base
 - **Age-segmented advertising analysis:** Test whether younger and older customer segments respond differently to specific channels
