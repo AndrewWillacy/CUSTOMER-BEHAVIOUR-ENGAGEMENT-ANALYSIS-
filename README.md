@@ -251,7 +251,6 @@ Key observations included:
 * Most customers were educated to graduate level or above
 * The customer base spans 8 countries
 * Customer age ranges from 28 to 84 (average 55)
-* Bulk email campaigns performed particularly well amongst single customers
 
 #### Recommendation
 
@@ -316,11 +315,9 @@ Although Spain generated the highest total revenue, Germany produced the highest
 
 #### Recommendation
 
-> 
+> Germany and USA are porential growth area. Montenegro is by far the worst performing and should be dropped
 
 ---
-
-
 
 ## Limitations
 
