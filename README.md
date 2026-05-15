@@ -403,17 +403,13 @@ The project deliverables included:
 
 ---
 
-## About
+## Results Summary
 
-This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**.
-
-The analysis focused on transforming raw customer and marketing data into actionable business insights through structured cleaning, exploratory analysis, SQL querying, and dashboard development.
-
-**Andrew Willacy**
-[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | [andrew.willacy.data@gmail.com](mailto:andrew.willacy.data@gmail.com)
-
-
-
+| Question | Answer |
+|----------|--------|
+| Who are the customers? | Primarily aged 28–84 (avg 55), married/together, graduate-educated, concentrated in Spain |
+| Which ad channel is most effective? | Instagram (highest avg spend $1,609); Brochure consistently least effective |
+| Which products sell best? | Alcohol (50% of all sales) universally; no meaningful demographic variation |
 
 ---
 
@@ -432,25 +428,16 @@ The analysis focused on transforming raw customer and marketing data into action
 └── README.md
 ```
 
----
-
-## Results Summary
-
-| Question | Answer |
-|----------|--------|
-| Who are the customers? | Primarily aged 28–84 (avg 55), married/together, graduate-educated, concentrated in Spain |
-| Which ad channel is most effective? | Instagram (highest avg spend $1,609); Brochure consistently least effective |
-| Which products sell best? | Alcohol (50% of all sales) universally; no meaningful demographic variation |
-
----
-
 ## About
 
-This project was completed as part of the **LSE Data Analytics Career Accelerator (DA201: Exploratory Analysis and Presenting Insights), June 2025**, achieving a score of 80%.
+This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**.
+
+The analysis focused on transforming raw customer and marketing data into actionable business insights through structured cleaning, exploratory analysis, SQL querying, and dashboard development.
 
 **Andrew Willacy**
-[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | andrew.willacy.data@gmail.com
+[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | [andrew.willacy.data@gmail.com](mailto:andrew.willacy.data@gmail.com)
 
+---
 
 
 
