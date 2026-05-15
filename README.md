@@ -410,8 +410,8 @@ The project deliverables included:
 | Who are the customers? | Primarily aged 28–84 (avg 55), married/together, graduate-educated, concentrated in Spain |
 | Which ad channel is most effective? | Instagram (highest avg spend $1,609); Brochure consistently least effective |
 | Which products sell best? | Alcohol (50% of all sales) universally; no meaningful demographic variation |
-| Does purchasing behaviour differ across demographics |
-| Are there geographic differences in sales perfromance |
+| Does purchasing behaviour differ across demographics | Alcohol is the most popular product across all demographics - vegetables the least popular |
+| Are there geographic differences in sales perfromance |Spain gebnerates the highest income from any country. Montenegro the least |
 
 
 The primary objectives of the analysis were to:
