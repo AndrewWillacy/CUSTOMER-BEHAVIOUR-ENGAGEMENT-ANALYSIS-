@@ -1,4 +1,4 @@
-# Customer Behaviour & Marketing Performance Analysis
+# International Retail Performance Analysis
 
 **Retail Customer Analytics Project | 2025**
 
