@@ -96,7 +96,7 @@ Figure 2: Ad_Data Table
 | ------------------------------- | ---------------------------------------------------------------------------------- |
 | **Data Cleaning & EDA**         | Excel (advanced functions, pivot tables, calculated columns)                       |
 | **Database & Querying**         | PostgreSQL (table creation, INNER JOIN, CASE, GREATEST/LEAST, aggregate functions) |
-| **Data Visualisation**          | Tableau Tableau (interactive dashboard, filters, multiple chart types              |
+| **Data Visualisation**          | Tableau (interactive dashboard, filters, multiple chart types)                     |
 | **Analysis Techniques**         | Exploratory Data Analysis (EDA), segmentation analysis, trend analysis             |
 | **Reporting**                   | Dashboard development, stakeholder reporting                                       |
 
