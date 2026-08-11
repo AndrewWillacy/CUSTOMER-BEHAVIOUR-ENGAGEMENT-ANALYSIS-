@@ -108,7 +108,7 @@ End-to-end data workflow · Data cleaning and validation · Exploratory analysis
 
 ## Analytical Approach
 
-The project followed a structured multi-stage workflow combining data cleaning, exploratory analysis, SQL analysis, and dashboard development.The raw dataset required significant preparation before analysis could begin:
+The project followed a structured multi-stage workflow combining data cleaning, exploratory analysis, SQL analysis, and dashboard development. The raw dataset required significant preparation before analysis could begin:
 
 ### 1. Data Cleaning & Validation (Excel)
 
@@ -116,14 +116,13 @@ The raw CSV datasets were initially imported into Excel for cleaning and prepara
 
 Key cleaning and validation steps included:
 
-* Standardised date formatting:
-standardised to DD/MM/YYYY
+* Standardised date formatting: standardised to DD/MM/YYYY
 * Removal of duplicate records: rows with identical entities across all fields except PK removed as implausible duplicates
 * Validation of primary key uniqueness: primary key (ID) checked for uniqueness
 * Standardisation of text formatting and category labels: product category codes translated to meaningful labels (e.g. 'AmtLiq' → 'Alcohol')
-* Identification and removal of implausible age records: three records showing customer ages over 124 removed as implausible; one income outlier of $666,666 (far above the next highest value) excluded from income-based analysis, but retained for other analyssis
+* Identification and removal of implausible age records: three records showing customer ages over 124 removed as implausible; one income outlier of $666,666 (far above the next highest value) excluded from income-based analysis, but retained for other analysis
 * Handling of inconsistent marital status categories: 'Single' and 'Alone' merged; 'YOLO' and 'Absurd' removed (three records, negligible impact)
-* Removal of formatting inconsistencies in income data: Formated column to numeric, removing $ signs and setting to 2 decimal places
+* Removal of formatting inconsistencies in income data: Formatted column to numeric, removing $ signs and setting to 2 decimal places
 * Validation of missing values and data types
 * Creation of derived analytical fields including:
 
@@ -178,7 +177,7 @@ Figure 3: The number of customers by country
 
 <img width="750" height="450" alt="Screenshot 2025-12-13 134910" src="https://github.com/user-attachments/assets/e5d1c800-453f-48d9-80ae-5ae6a2a84731" />/
 
-Figure 4: Incoome by total spend
+Figure 4: Income by total spend
 
 <img width="650" height="420" alt="Screenshot 2025-12-13 135615" src="https://github.com/user-attachments/assets/45a9f51f-8882-4c0b-ad4d-1ec35ef3f1a8" />
 
@@ -227,8 +226,8 @@ The database structure included:
 
 #### Campaign Effectiveness
 
-* Twitter (X) was identified as the highest-performing advertising channel
-* Instagram and Facebook also demonstrated strong engagement performance
+* Twitter (X) generated the highest number of campaign conversions
+* Instagram produced the highest average customer spend ($1,609)
 * Brochure advertising consistently underperformed across most demographic groups
 * Bulk email campaigns showed stronger performance amongst single customers than expected
 
@@ -411,7 +410,7 @@ The project deliverables included:
 | Which ad channel is most effective? | Instagram (highest avg spend $1,609); Brochure consistently least effective |
 | Which products sell best? | Alcohol (50% of all sales) universally; no meaningful demographic variation |
 | Does purchasing behaviour differ across demographics | Alcohol is the most popular product across all demographics - vegetables the least popular |
-| Are there geographic differences in sales perfromance |Spain gebnerates the highest income from any country. Montenegro the least |
+| Are there geographic differences in sales performance |Spain generates the highest income from any country. Montenegro the least |
 
 
 The primary objectives of the analysis were to:
